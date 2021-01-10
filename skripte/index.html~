@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Skripte von Julian</title>
+</head>
+<body>
+<b>Skript Installer:</b>  <br /> <br /> 
+<code>wget xmoo.de/skripte.sh && sudo chmod +x ./skripte.sh && ./skripte.sh</code> <br /> <br /> 
+<b>Verfügbare Skripte:</b>  <br /> 
+anydesk <br>
+funkstarter <br>
+github <br>
+GridTracker <br>
+iobroker-update <br>
+SunSDR2DX <br>
+skripte <br>
+tty0tty <br>
+updater <br>
+wsjtx <br>
+</body>
+</html>
