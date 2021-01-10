@@ -2,7 +2,7 @@
 
 #!/bin/bash
 
-=====Skripte werden aktualisiert=====
+echo =====Skripte werden aktualisiert=====
 cd #Initialisiere
 
 if [ -d ./skripte ]  # existiert Ordner Skripte
@@ -18,8 +18,14 @@ cd skripte/
 wget -N -q xmoo.de/anydesk.sh
 sudo chmod +x ./anydesk.sh
 
+wget -N -q xmoo.de/docker-install.sh
+sudo chmod +x ./docker-install.sh
+
 wget -N -q xmoo.de/funkstarter.sh
 sudo chmod +x ./funkstarter.sh
+
+wget -N -q xmoo.de/git-clone-skripte.sh
+sudo chmod +x ./git-clone-skripte.sh
 
 wget -N -q xmoo.de/github.sh
 sudo chmod +x ./github.sh
@@ -29,6 +35,9 @@ sudo chmod +x ./GridTracker.sh
 
 wget -N -q xmoo.de/iobroker-update.sh
 sudo chmod +x ./iobroker-update.sh
+
+wget -N -q xmoo.de/server-einrichten.sh
+sudo chmod +x ./server-einrichten.sh
 
 wget -N -q xmoo.de/skripte.sh
 sudo chmod +x ./skripte.sh
