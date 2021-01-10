@@ -2,6 +2,8 @@
 
 #!/bin/bash
 
+cd
+
 echo =====Server einrichten=====
 
 echo =====Neues Root Passwort festlegen=====
@@ -29,8 +31,22 @@ sed '/ClientAliveCountMax/d' /etc/ssh/sshd_config
 #Fügt ClientAliveCountMax 120 ein"
 echo -e "ClientAliveCountMax 120" >> /etc/ssh/sshd_config
 
+echo =====User anlegen=====
 
+read user
+adduser $user
+usermod -aG sudo $user
 
+echo =====Skripte in Userverzeichnis kopieren=====
+cp -r skripte /home/$user
+
+#Suche nach PermitRootLogin und löscht die gesamte Zeile
+sed -i '/PermitRootLogin/d' /etc/ssh/sshd_config
+
+#Fügt PermitRootLogin no ein"
+echo -e "PermitRootLogin no" >> /etc/ssh/sshd_config
+
+/etc/init.d/ssh reload
 
 
 skripte/updater.sh

@@ -10,9 +10,6 @@
 zum System Updaten eingeben:<br>
 <code>/skripte/updater.sh</code> <br><br>
 
-zum Server einrichten:<br>
-<code>/skripte/server-einrichten.sh</code> <br><br>
-
 
 <p><b>Verfügbare Skripte:</b>  <br /> 
 anydesk.sh <br>

@@ -3,6 +3,7 @@
 #!/bin/bash
 
 cd
+
 sudo apt-get update -q
 echo =====Update durchgeführt=====
 sudo apt-get upgrade -y -q
