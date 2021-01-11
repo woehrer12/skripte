@@ -68,3 +68,7 @@ if [ -e ./skripte.sh ]  # schaue ob skripte.sh im Home existiert und lösche es
 		rm ./skripte.sh   		
 fi
 
+# Versiontest Version 2
+# Tested by: woehrer
+# Test date: 2021-01-10
+# Test Systems: Ubuntu 18, Ubuntu 20, Ubuntu Server, Raspbian
