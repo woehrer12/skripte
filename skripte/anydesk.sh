@@ -1,6 +1,14 @@
-#Version 1 2021-01-10
+# Script Name:  Anydesk
+# Beschreibung: Prüft ob Anydesk installiert ist. Wenn nicht installiert es Anydesk
+# Aufruf:       /skripte/anydesk.sh
+# Autor:        woehrer
+# Version:      1
+# Datum:        2021-01-10
 
 #!/bin/bash
+
+echo =====Anydesk Installer=====
+cd #Initialisiere
 
 if [[ -f $(which anydesk 2>/dev/null) ]]
     then
@@ -13,3 +21,8 @@ if [[ -f $(which anydesk 2>/dev/null) ]]
 	sudo apt install anydesk
 
 fi
+
+# Versiontest Version 1
+# Tested by: * TODO
+# Test date: * TODO
+# Test Systems: * TODO

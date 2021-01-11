@@ -1,6 +1,6 @@
 # Script Name:  Skripte
 # Beschreibung: Downloaded alle Skripte in den Ordner /Skripte und aktualisiert sie falls neue vorhanden sind
-#		Erster Download Erfolg nach Download in /. Dort wird das Skript nach dem ersten ausführen wieder gelöschtt.
+#		Erster Download Erfolg nach Download in /. Dort wird das Skript nach dem ersten ausführen wieder gelöscht.
 # Aufruf:       /skripte/skripte.sh
 # Autor:        woehrer
 # Version:      2

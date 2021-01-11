@@ -1,10 +1,18 @@
-#Version 1 2021-01-10
+# Script Name:  Docker Install
+# Beschreibung: 	Löscht zuerst alter Docker Installationen. Fügt Docker Repository hinzu und installiert Docker.
+# 						Es wird zum Test Docker "hello-world" ausgeführt. 
+#						Anschliesend wird portainer installiert um Docker zu verwalten
+# Aufruf:       /skripte/docker-install.sh
+# Autor:        woehrer
+# Version:      2
+# Datum:        2021-01-11
 
 #!/bin/bash
 
-#nach der Anleitung von https://docs.docker.com/engine/install/ubuntu/
-
 echo =====Docker installieren=====
+cd #Initialisiere
+
+#nach der Anleitung von https://docs.docker.com/engine/install/ubuntu/
 echo =====Alte Versionen von Docker löschen=====
 
 #sudo apt-get remove docker docker-engine docker.io containerd runc
@@ -38,6 +46,11 @@ sudo docker run hello-world
 
 echo =====Portainer installieren=====
 
-docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
+sudo docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock portainer/portainer
 
+docker ps
 
+# Versiontest Version 2
+# Tested by: woehrer
+# Test date: 2021-01-11
+# Test Systems: Ubuntu Server

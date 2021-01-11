@@ -1,10 +1,17 @@
-#Version 1 2021-01-10
+# Script Name:  Server einrichten
+# Beschreibung: Stellt alle wichtigen Parameter an einem neuen Server ein.
+#						SSH Timeout wird sehr hoch gesetzt.
+#						Neuer sudo User wird angelegt
+#						SSH Root Login wird deaktiviert
+# Aufruf:       /skripte/server-einrichten.sh
+# Autor:        woehrer
+# Version:      1
+# Datum:        2021-01-11
 
 #!/bin/bash
 
-cd
-
 echo =====Server einrichten=====
+cd #Initialisiere
 
 echo =====Neues Root Passwort festlegen=====
 
@@ -50,3 +57,11 @@ echo -e "PermitRootLogin no" >> /etc/ssh/sshd_config
 
 
 skripte/updater.sh
+
+
+
+
+# Versiontest Version 1
+# Tested by: woehrer
+# Test date: 2021-01-11
+# Test Systems: Ubuntu Server

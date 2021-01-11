@@ -1,7 +1,14 @@
-#Version 1 2021-01-06
+# Script Name:  GridTracker Installer
+# Beschreibung: Downloaded GridTracker Version 1.20 und entpackt es. Die Downloaddatei wird automatisch wieder gelöscht.
+# Aufruf:       /skripte/GridTracker.sh
+# Autor:        woehrer
+# Version:      1
+# Datum:        2021-01-10
 
 #!/bin/bash
+
 echo =====GridTracker 1.20=====
+cd #Initialisiere
 
 #name Der Download Datei
 datei=GridTracker-Linux-64-1.20.0927.tar.gz?dl=1 
@@ -13,3 +20,8 @@ echo =====GridTracker wird entpackt=====
 tar xfv $datei
 =====Download Datei wieder gelöscht=====
 rm $datei
+
+# Versiontest Version 1
+# Tested by: woehrer
+# Test date: 2021-01-10
+# Test Systems: Ubuntu 20

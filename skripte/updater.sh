@@ -1,8 +1,15 @@
-#Version 1 2021-01-06
+# Script Name:  Updater
+# Beschreibung: Installiert alle System Updates und Bereinigt alles.
+#						Stößt auch ein Update der Skripte an
+# Aufruf:       /skripte/updater.sh
+# Autor:        woehrer
+# Version:      1
+# Datum:        2021-01-11
 
 #!/bin/bash
 
-cd
+echo =====Skriptname=====
+cd #Initialisiere
 
 sudo apt-get update -q
 echo =====Update durchgeführt=====
@@ -19,8 +26,8 @@ echo =====Autoremove durchgeführt=====
 
 if [ -d ./skripte ]  # existiert Ordner Skripte
 	then
-   		echo =====Wechsle in Skripte=====
-   	else
+   	echo =====Wechsle in Skripte=====
+else
 		echo =====Ordner Skripte wird erstellt=====
 		mkdir skripte	
 fi
@@ -30,3 +37,8 @@ sudo chmod +x ./skripte.sh
 cd
 skripte/skripte.sh
 echo =====Skripte aktualisiert=====
+
+# Versiontest Version 1
+# Tested by: woehrer
+# Test date: 2021-01-10
+# Test Systems: Ubuntu 18, Ubuntu 20, Ubuntu Server, Raspbian
