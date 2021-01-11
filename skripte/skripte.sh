@@ -1,4 +1,10 @@
-#Version 2 2021-01-10
+# Script Name:  Skripte
+# Beschreibung: Downloaded alle Skripte in den Ordner /Skripte und aktualisiert sie falls neue vorhanden sind
+#		Erster Download Erfolg nach Download in /. Dort wird das Skript nach dem ersten ausführen wieder gelöschtt.
+# Aufruf:       /skripte/skripte.sh
+# Autor:        woehrer
+# Version:      2
+# Datum:        2021-01-11
 
 #!/bin/bash
 
