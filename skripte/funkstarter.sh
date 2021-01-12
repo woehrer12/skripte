@@ -19,7 +19,7 @@ echo =====Update erfolgreich=====
 
 #tty0tty starten
 
-if [ -d ./tty0tty ]  # existiert Updater?
+if [ -d ./tty0tty ]  # existiert tty0tty?
 	then
    		echo =====tty0tty existiert bereits=====
 		sudo depmod
@@ -61,13 +61,7 @@ wsjtx &
 
 
 #GridTracker starten
-if [ -e ./GridTracker/GridTracker ]  # existiert GridTracker?
-	then
-		echo =====GridTracker existiert bereits=====
-	else
-		echo =====GridTracker wird installiert=====
-		skripte/GridTracker.sh
+skripte/GridTracker.sh #Prüfe ob GridTracker vorhanden, ansonsten Installiere es
 		
-fi
 echo =====GridTracker wird gestartet=====	
 ./GridTracker/GridTracker &
