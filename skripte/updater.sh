@@ -8,7 +8,7 @@
 
 #!/bin/bash
 
-echo =====Skriptname=====
+echo =====Updater=====
 cd #Initialisiere
 
 sudo apt-get update -q
