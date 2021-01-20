@@ -55,6 +55,10 @@ echo -e "PermitRootLogin no" >> /etc/ssh/sshd_config
 
 /etc/init.d/ssh reload
 
+#Füge automatische Updates in Crontab ein
+cat <(sudo crontab -l) <(echo "* 3 * * * * /skripte/updater.sh") | sudo crontab -
+
+
 
 skripte/updater.sh
 
