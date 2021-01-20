@@ -24,18 +24,8 @@ echo =====AutoClean durchgeführt=====
 sudo apt-get autoremove -y -q
 echo =====Autoremove durchgeführt=====
 
-if [ -d ./skripte ]  # existiert Ordner Skripte
-	then
-   	echo =====Wechsle in Skripte=====
-else
-		echo =====Ordner Skripte wird erstellt=====
-		mkdir skripte	
-fi
-cd skripte/
-wget -N xmoo.de/skripte.sh
-sudo chmod +x ./skripte.sh
 cd
-skripte/skripte.sh
+git clone https://github.com/woehrer12/skripte.git
 echo =====Skripte aktualisiert=====
 
 # Versiontest Version 1
