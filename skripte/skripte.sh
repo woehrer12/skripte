@@ -48,9 +48,6 @@ sudo chmod +x ./server-einrichten.sh
 wget -N -q xmoo.de/skripte.sh
 sudo chmod +x ./skripte.sh
 
-wget -N -q xmoo.de/SondeDecoderTouch.sh
-sudo chmod +x ./SondeDecoderTouch.sh
-
 wget -N -q xmoo.de/SunSDR2DX.sh
 sudo chmod +x ./SunSDR2DX.sh
 
