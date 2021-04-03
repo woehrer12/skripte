@@ -38,6 +38,8 @@ sudo add-apt-repository \
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 
+sudo apt install docker-compose -y
+
 echo =====Teste Docker Installation=====
 
 sudo docker run hello-world
