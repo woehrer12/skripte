@@ -11,13 +11,13 @@ echo =====Sondensucher Installer=====
 cd #Initialisiere
 
 echo =====Docker Installer=====
-/skripte/docker-install.sh
+skripte/docker-install.sh
 
 echo =====Sondensucher Git Download=====
 git clone https://github.com/woehrer12/sondensucher.git
 
 echo =====Sondensucher Installer=====
-/sondensucher/installer.sh
+sondensucher/installer.sh
 
 # Versiontest Version 1
 # Tested by: woehrer
