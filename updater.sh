@@ -34,6 +34,8 @@ if [ -d ./skripte ]  # existiert Ordner Skripte
 		git clone https://github.com/woehrer12/skripte.git
 fi
 
+cd
+
 echo =====Skripte aktualisiert=====
 
 # Versiontest Version 1

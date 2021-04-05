@@ -13,8 +13,18 @@ cd #Initialisiere
 echo =====Docker Installer=====
 skripte/docker-install.sh
 
-echo =====Sondensucher Git Download=====
-git clone https://github.com/woehrer12/sondensucher.git
+cd
+if [ -d ./sondensucher]  # existiert Ordner Skripte
+	then
+   		cd sondensucher/
+      git pull
+   	else
+		echo =====Ordner sondensucher wird erstellt=====
+		git clone https://github.com/woehrer12/sondensucher.git
+fi
+
+cd
+
 
 echo =====Sondensucher Installer=====
 sondensucher/install.sh
