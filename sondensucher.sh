@@ -17,7 +17,7 @@ echo =====Sondensucher Git Download=====
 git clone https://github.com/woehrer12/sondensucher.git
 
 echo =====Sondensucher Installer=====
-sondensucher/installer.sh
+sondensucher/install.sh
 
 # Versiontest Version 1
 # Tested by: woehrer
