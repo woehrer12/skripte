@@ -7,7 +7,7 @@
 
 #!/bin/bash
 
-echo =====Chia starter=====
+echo =====Chia Starter=====
 cd #Initialisiere
 
 cd chia-blockchain
