@@ -26,10 +26,6 @@ chmod +x ./install-gui.sh
 
 ./install-gui.sh
 
-cd chia-blockchain-gui
-
-npm run electron &
-
 # Versiontest Version 1
 # Tested by: woehrer
 # Test date: 2021-05-07
