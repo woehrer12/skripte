@@ -4,16 +4,6 @@
 
 cd
 
-if [ -e skripte/updater.sh ]  # existiert Updater?
-	then
-   		echo =====Updater existiert bereits=====
-   	else	
-		cd skripte
-		wget -N xmoo.de/skripte.sh
-		sudo chmod +x ./skripte.sh
-		skripte/skripte.sh
-		cd	
-fi
 skripte/updater.sh
 echo =====Update erfolgreich=====
 
