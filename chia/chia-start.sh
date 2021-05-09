@@ -60,6 +60,7 @@ if [ "$newspace" = "G" ]
                         chia plots create -k 33 -t ./chia_temp -d ./chia_fertig &
                     else 
                         chia plots create -k 32 -t ./chia_temp -d ./chia_fertig &
+                fi
         fi
 fi
 
