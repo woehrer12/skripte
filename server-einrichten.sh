@@ -63,7 +63,7 @@ cat <(sudo crontab -l) <(echo "* 3 * * * * /skripte/updater.sh") | sudo crontab 
 skripte/updater.sh
 
 
-
+logout
 
 # Versiontest Version 1
 # Tested by: woehrer
