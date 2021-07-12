@@ -1,6 +1,6 @@
-# Script Name:  Flutter doctor
-# Beschreibung: Prüft bei Flutter die Installation
-# Aufruf:       /skripte/flutter/doctor.sh
+# Script Name:  Flutter listet ein Baum der Packete auf
+# Beschreibung: Listet ein Baum der Packete auf
+# Aufruf:       /skripte/flutter/pub_deps.sh
 # Autor:        woehrer
 # Version:      1
 # Datum:        2021-07-12
@@ -10,7 +10,7 @@
 echo =====Flutter Doctor=====
 #cd #Initialisiere
 
-flutter doctor
+flutter pub deps
 
 # Versiontest Version 1
 # Tested by: woehrer
