@@ -23,6 +23,9 @@ sudo iobroker update
 echo =====IOBroker Upgrade Self=====
 sudo iobroker upgrade self
 
+echo =====IOBroker Upgrade=====
+sudo iobroker upgrade
+
 echo =====IOBroker Start=====
 sudo iobroker start
 
