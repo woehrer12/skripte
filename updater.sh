@@ -11,7 +11,7 @@
 echo =====Updater=====
 cd #Initialisiere
 
-sudo apt-get update -q
+sudo apt-get update -y -q
 echo =====Update durchgeführt=====
 sudo apt-get upgrade -y -q
 echo =====Upgrade durchgeführt=====
