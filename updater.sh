@@ -9,7 +9,6 @@
 #!/bin/bash
 
 echo =====Updater=====
-cd #Initialisiere
 
 sudo apt-get update -y -q
 echo =====Update durchgeführt=====
@@ -24,17 +23,7 @@ echo =====AutoClean durchgeführt=====
 sudo apt-get autoremove -y -q
 echo =====Autoremove durchgeführt=====
 
-cd
-if [ -d ./skripte ]  # existiert Ordner Skripte
-	then
-   		cd skripte/
-      git pull
-   	else
-		echo =====Ordner Skripte wird erstellt=====
-		git clone https://github.com/woehrer12/skripte.git
-fi
-
-cd
+git pull ~/skripte
 
 echo =====Skripte aktualisiert=====
 
