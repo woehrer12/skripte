@@ -22,19 +22,23 @@ skripte/updater.sh
 
 echo =====Neue Docker Dateien installieren=====
 sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
-    
-echo =====Docker GPG KEY hinzufügen=====
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-echo =====Docker Fingerprint 0EBFCD88 ausgeben=====
 
-echo =====Docker Repository hinzufügen=====
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
+echo =====Docker Installieren=====
+sudo curl -fsSL https://get.docker.com | sh
 
-/skripte/updater.sh
+# echo =====Docker GPG KEY hinzufügen=====
+# curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+# echo =====Docker Fingerprint 0EBFCD88 ausgeben=====
+
+# echo =====Docker Repository hinzufügen=====
+# sudo add-apt-repository \
+#    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+#    $(lsb_release -cs) \
+#    stable"
+
+# /skripte/updater.sh
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 
