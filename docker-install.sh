@@ -10,15 +10,14 @@
 #!/bin/bash
 
 echo =====Docker installieren=====
-cd #Initialisiere
 
 #nach der Anleitung von https://docs.docker.com/engine/install/ubuntu/
 echo =====Alte Versionen von Docker löschen=====
 
 #sudo apt-get remove docker docker-engine docker.io containerd runc
-sudo apt-get remove docker docker.io containerd runc
+sudo apt-get remove docker docker.io containerd runc -y
 
-skripte/updater.sh
+~/skripte/updater.sh
 
 echo =====Neue Docker Dateien installieren=====
 sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
@@ -38,7 +37,7 @@ sudo curl -fsSL https://get.docker.com | sh
 #    $(lsb_release -cs) \
 #    stable"
 
-# /skripte/updater.sh
+~/skripte/updater.sh
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io -y
 
