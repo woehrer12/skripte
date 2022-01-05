@@ -15,7 +15,7 @@ echo =====Docker installieren=====
 echo =====Alte Versionen von Docker löschen=====
 
 #sudo apt-get remove docker docker-engine docker.io containerd runc
-sudo apt-get remove docker docker.io containerd runc
+sudo apt-get remove docker docker.io containerd runc -y
 
 ~/skripte/updater.sh
 
