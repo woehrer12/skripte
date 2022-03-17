@@ -45,6 +45,12 @@ sudo apt install docker-compose -y
 
 echo =====Teste Docker Installation=====
 
+sudo groupadd docker
+
+sudo gpasswd -a $USER docker
+
+newgrp docker
+
 sudo docker run hello-world
 
 #docker run -it ubuntu bash
