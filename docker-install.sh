@@ -45,12 +45,6 @@ sudo apt install docker-compose -y
 
 echo =====Teste Docker Installation=====
 
-sudo groupadd docker
-
-sudo gpasswd -a $USER docker
-
-newgrp docker
-
 sudo docker run hello-world
 
 #docker run -it ubuntu bash
@@ -60,6 +54,12 @@ echo =====Portainer installieren=====
 sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 
 sudo docker ps
+
+sudo groupadd docker
+
+sudo gpasswd -a $USER docker
+
+newgrp docker
 
 # Versiontest Version 2
 # Tested by: woehrer
