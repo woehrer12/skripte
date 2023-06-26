@@ -1,0 +1,9 @@
+@lxpanel --profile LXDE-pi
+@pcmanfm --desktop --profile LXDE-pi
+@xscreensaver -no-splash
+@xset s noblank
+@xset s off
+@xset -dpms
+
+@chromium-browser --incognito --kiosk http://192.168.50.5:8082/vis/index.html?G>
+
