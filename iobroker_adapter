@@ -1,0 +1,14 @@
+
+1.) cd src
+
+2.) npm i -f
+
+3.) cd ..
+
+(1 und 2 nur einmalig)
+
+4.) npm run build
+
+dann iob upload modbus
+
+ist es dann da?
