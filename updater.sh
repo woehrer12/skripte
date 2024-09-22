@@ -23,6 +23,8 @@ echo =====AutoClean durchgeführt=====
 sudo apt-get autoremove -y -q
 echo =====Autoremove durchgeführt=====
 
+sudo snap refresh
+
 git pull ~/skripte
 
 echo =====Skripte aktualisiert=====
