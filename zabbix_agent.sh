@@ -7,3 +7,5 @@ sudo systemctl restart zabbix-agent2
 sudo systemctl enable zabbix-agent2 
 
 sudo nano /etc/zabbix/zabbix_agent2.conf
+
+sudo systemctl restart zabbix-agent2 
